@@ -1,0 +1,112 @@
+@font-face {
+    font-family: dice;
+    src: url(./Font/Wrong\ Delivery.ttf);
+}
+*{
+    overflow-x: hidden;
+}
+
+body{
+    background-image: url(Hintergrund/pxfuel\ \(6\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: dice;
+}
+
+h1{
+    text-align: center;
+    font-size: 5em;
+    animation: blink 2s linear infinite;
+}
+
+h2{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h3{
+    color: white;
+    font-size: 1.5em;
+    text-shadow: 0 0 10px palevioletred, 0 0 20px palevioletred, 0 0 30px palevioletred ;
+}
+
+@keyframes blink {
+    0% {
+        text-shadow: none;
+        opacity: 1;
+    }
+    50% {
+        text-shadow: 0 0 10px green,  0 0 20px green,  0 0 30px green,  0 0 40px green, 0 0 50px green,  0 0 60px green,   0 0 70px green, 0 0 80px green;
+        opacity: 0.75;
+    }
+    100% {
+        text-shadow: none;
+        opacity: 1;
+    }
+}
+
+@keyframes flicker {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+
+
+#link{
+    text-decoration: none;
+    color: white;
+    font-size: 2.4em;
+
+}
+
+#verlauf p{
+    text-transform: uppercase;
+    color: white;
+}
+
+#regeln p{
+    text-transform: uppercase;
+    color: white;
+}
+
+#box{
+    background-color: rgba(0, 0, 0, 0.603);
+    border-radius: 20px;
+    padding: 2%;
+    margin-left: 30%;
+    margin-right: 30%;
+    box-shadow: 0 0 70px green, 0 0 90px green;
+} 
+
+span{
+    color: greenyellow;
+    text-shadow: 0 0 10px green, 0 0 20px green, 0 0 30px green;
+}
+
+#pfeil1 img{
+    margin-left: 45% ;
+    margin-right: 32% ;
+    width: 9em;
+}
+
+#linkContent{
+    text-align: center;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    transition-property: all;
+}
+
+
+#linkContent:hover{
+    transform: scale(1.1);
+}
+
+
+
+
+
+

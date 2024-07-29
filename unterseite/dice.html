@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Attack</title>
+    <link rel="stylesheet" href="dice.css">
+    <script src="dice.js" defer></script>
+</head>
+<body>
+
+    <a id="starts" style="display: none;" href="../home.html">Zurück zur Startseite</a>
+
+    <div id="player1name">
+        <p>Name Player 1</p>
+        <input id="name1" type="text" name="name" value="">
+    </div>
+
+    <div id="player1">
+        <div id="Creeper" onclick="Creeper1()">
+            <p>CREEPER</p>
+            <div id="KDA">
+                <p>5</p>
+                <img src="herz.png" alt="">
+                <p>5</p>
+                <img src="schaden.png" alt="">
+                
+                
+            </div>
+            
+            <div class="charA">
+                    <img class="Charakter" src="../Fotos/Creeper.png" alt="">
+                </div>
+            
+        </div>
+
+        <div id="Skeleton" onclick="Skeleton1()">
+            <p>SKELETON</p>
+            <div id="KDA">
+                <p>9</p>
+                <img src="herz.png" alt="">
+                <p>3</p>
+                <img src="schaden.png" alt="">
+                
+                
+            </div>
+            
+            <div class="charA">
+                    <img class="Charakter" src="../Fotos/Skeleton.png" alt="">
+                </div>
+            
+        </div>
+
+        <div id="Zombie" onclick="Zombie1()">
+            <p>ZOMBIE</p>
+            <div id="KDA">
+                <p>11</p>
+                <img src="herz.png" alt="">
+                <p>2</p>
+                <img src="schaden.png" alt="">
+                
+                
+            </div>
+            
+            <div class="charA">
+                    <img class="Charakter" src="../Fotos/Zombie.png" alt="">
+                </div>
+        </div>
+    </div>    
+
+        <div style="display: inline;" id="button" onclick="weiter1()">WEITER</div>
+
+
+        
+        <div style="display: none;" id="player2name">
+            <p>Name Player 2</p>
+            <input id="name2" type="text" name="name" value="">
+        </div>
+
+        <div style="display: none;" id="player2">
+            <div id="Creeper2" onclick="Creeper2()">
+                <p>CREEPER</p>
+                <div id="KDA">
+                    <p>5</p>
+                    <img src="herz.png" alt="">
+                    <p>5</p>
+                    <img src="schaden.png" alt="">
+                    
+                    
+                </div>
+                
+                <div class="charA">
+                        <img class="Charakter" src="../Fotos/Creeper.png" alt="">
+                    </div>
+            </div>
+    
+            <div id="Skeleton2" onclick="Skeleton2()">
+                <p>SKELETON</p>
+                <div id="KDA">
+                    <p>9</p>
+                    <img src="herz.png" alt="">
+                    <p>3</p>
+                    <img src="schaden.png" alt="">
+                    
+                    
+                </div>
+
+                <div class="charA">
+                    <img class="Charakter" src="../Fotos/Skeleton.png" alt="">
+                </div>
+            </div>
+    
+            <div id="Zombie2" onclick="Zombie2()">
+                <p>ZOMBIE</p>
+                <div id="KDA">
+                    <p>11</p>
+                    <img src="herz.png" alt="">
+                    <p>2</p>
+                    <img src="schaden.png" alt="">
+                    
+                    
+                </div>
+                
+                <div class="charA">
+                        <img class="Charakter" src="../Fotos/Zombie.png" alt="">
+                    </div>
+            </div>
+        </div>
+
+        <div style="display: none;" id="button2" onclick="weiter2()">WEITER</div>
+
+
+        <h1 style="display: none; text-align: center;" id="h1Play">Game Dice Attack</h1>
+
+        <div style="display: none;" id="gridGame">
+            <div id="player1Game">
+                <div id="namePl1"></div>
+                <div id="lives1"> </div>
+                <div id="damage1"></div>
+                <div id="rollW1"></div>
+                <div id="char1P"></div>
+            </div>
+
+            <div id="player2Game">
+                <div id="namePl2"></div>
+                <div id="lives2"></div>
+                <div id="damage2"></div>
+                <div id="rollW2"></div>
+                <div id="char2P"></div>
+            </div>
+        </div>
+
+        <div style="display: none;" id="winner"> </div>
+        <img style="display: none;" id="nahhh" src="noone.png" alt="non">
+        <div style="display: none;" id="playA" onclick="playAgain()">Nochmal Spielen</div>
+
+        <div style="display: none;" id="rollP" onclick="roll()">Würfeln</div>
+    
+</body>
+</html>

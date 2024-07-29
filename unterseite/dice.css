@@ -1,0 +1,432 @@
+@font-face {
+    font-family: font;
+    src: url(../Font/Wrong\ Delivery.ttf);
+}
+
+@font-face {
+    font-family: mc;
+    src: url(../Font/Minecraftia-Regular.ttf);
+}
+    /* *{
+        outline: red 5px dotted;
+        font-family: mc;
+    } */
+
+    *{
+        font-family: mc;
+    }
+
+body{
+    background-image: url(Hintergrund/minecraft-2053886_1280.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+#player1{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    margin: 10%;
+    margin-top: 4%;
+    font-family: mc;
+}
+
+
+
+#Creeper{
+    margin: 3%;
+    padding: 2%;
+    padding-bottom: 20%;
+    background-color: rgba(255, 255, 255, 0.514);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0, 0, 0), 0 0 20px rgb(0, 0, 0), 0 0 30px rgb(0, 0, 0), 0 0 40px rgb(0, 0, 0);
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    transition-property: all;
+}
+
+#Skeleton{
+    margin: 3%;
+    padding: 2%;
+    padding-bottom: 20%;
+    background-color: rgba(255, 255, 255, 0.525);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0, 0, 0), 0 0 20px rgb(0, 0, 0), 0 0 30px rgb(0, 0, 0), 0 0 40px rgb(0, 0, 0);
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    transition-property: all;
+}
+
+#Zombie{
+    margin: 3%;
+    padding: 2%;
+    padding-bottom: 50%;
+    background-color: rgba(255, 255, 255, 0.537);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0, 0, 0), 0 0 20px rgb(0, 0, 0), 0 0 30px rgb(0, 0, 0);
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    transition-property: all;
+}
+
+#player2{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    margin: 10%;
+    margin-top: 4%;
+    font-family: mc;
+}
+
+
+#Creeper2{
+    grid-column: 1;
+    margin: 3%;
+    padding: 2%;
+    padding-bottom: 20%;
+    background-color: rgba(255, 255, 255, 0.514);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0, 0, 0), 0 0 20px rgb(0, 0, 0), 0 0 30px rgb(0, 0, 0), 0 0 40px palevioletred;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    transition-property: all;
+}
+
+#Skeleton2{
+    grid-column: 2;
+    margin: 3%;
+    padding: 2%;
+    padding-bottom: 20%;
+    background-color: rgba(255, 255, 255, 0.525);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0, 0, 0), 0 0 20px rgb(0, 0, 0), 0 0 30px rgb(0, 0, 0), 0 0 40px rgb(0, 0, 0);transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    transition-property: all;
+}
+
+#Zombie2{
+    grid-column: 3;
+    margin: 3%;
+    padding: 2%;
+    padding-bottom: 50%;
+    background-color: rgba(255, 255, 255, 0.537);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0, 0, 0), 0 0 20px rgb(0, 0, 0), 0 0 30px rgb(0, 0, 0);
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    transition-property: all;
+}
+
+#Creeper:hover{
+    scale: 1.1;
+}
+#Skeleton:hover{
+    scale: 1.1;
+}
+#Zombie:hover{
+    scale: 1.1;
+}
+#Creeper2:hover{
+    scale: 1.1;
+}
+#Skeleton2:hover{
+    scale: 1.1;
+}
+#Zombie2:hover{
+    scale: 1.1;
+}
+/* 
+.Creeper:active{
+    background-color: rgba(172, 255, 47, 0.397);
+}
+.Skeleton:active{
+    background-color: rgba(250, 235, 215, 0.368);
+}
+.Zombie:active{
+    background-color: rgba(0, 128, 0, 0.365);
+} */ 
+
+#button{
+    padding: 1%;
+    background-image: url(../Fotos/Mc_Schild.png);
+    font-family: mc;
+    margin-left: 43%;
+    margin-right: 45%;
+    font-size: 2em;
+    text-align: center;
+    color: white;
+    margin-top: 20%;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    transition-property: all;
+}
+
+#button2{
+    padding: 1%;
+    background-image: url(../Fotos/Mc_Schild.png);
+    font-family: mc;
+    margin-left: 43%;
+    margin-right: 45%;
+    font-size: 2em;
+    text-align: center;
+    color: white;
+    margin-top: 20%;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    transition-property: all;
+}
+
+
+#button:hover{
+    transform: scale(1.1);
+}
+
+#button2:hover{
+    transform: scale(1.1);
+}
+
+#player1name{
+   text-align: center;
+   margin-top: 10%; 
+}
+
+#player2name{
+    text-align: center;
+    margin-top: 10%; 
+ }
+
+#KDA img{
+    width: 30%;
+    margin-left: 30%;
+    margin-bottom: 0;
+    
+}
+
+#name1{
+    font-family: mc;
+    text-align: center;
+}
+
+#name2{
+    margin-left: 42%;
+    font-family: mc;
+    text-align: center;
+}
+
+input{
+    font-size: 0.9;
+    border-radius: 1vw;
+    padding: 0.5%;
+}
+
+p{
+    font-family: mc;
+}
+
+#gridGame{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 3%;
+}
+
+#player2Game{
+    padding-top: 2%;
+    border-radius: 20px;
+    padding-bottom: 20%;
+    margin: 2%;
+    width: 96%;
+    background-color: rgba(0, 128, 0, 0.516);
+}
+
+#player1Game{
+    padding-top: 2%;
+    border-radius: 20px;
+    background-color: greenyellow;
+    padding-bottom: 50%;
+    width: 96%;
+    margin: 2%;
+    background-color: rgba(0, 128, 0, 0.516);
+}
+
+#h1Play{
+    text-align: center;
+}
+
+#namePl1{
+    text-align: center;
+}
+#namePl2{
+    text-align: center;
+}
+
+#lives1{
+    width: 100%;
+    padding-bottom: 3%;
+}
+#lives2{
+    width: 100%;
+    padding-bottom: 3%;
+}
+
+#lives1 img{
+    margin-top: 2%;
+    width: 5% ;
+}
+#lives2 img{
+    margin-top: 2%;
+    width: 5%;
+}
+
+
+#damage1 img{
+    width: 5% ;
+}
+#damage2 img{
+    width: 5%;
+}
+
+#char1P img{
+    margin-left: 30%;
+    width: 20%;
+}
+
+#char2P img{
+    margin-left: 30%;
+    width: 20%;
+}
+#roll{
+    text-align: center;
+}
+
+#rollW1 img{
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    width: 10%;
+}
+
+#rollW2 img{
+    position: absolute;
+    top: 40%;
+    right: 10%;
+    width: 10%;
+}
+
+#winner{
+    color: white;
+    padding: 10%;
+    position: absolute;
+    top: 40%;
+    left: 33%;
+    background-color: rgba(165, 42, 42, 0.926);
+    border-radius: 20px;
+}
+
+#rollP{
+    position: absolute;
+    left: 39%;
+    top: 27%;
+    border-color: black;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 20px;
+    padding: 1%;
+    width: 20%;
+    text-align: center;
+    background-image: linear-gradient(to right, lightblue, green);
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    transition-property: all;
+}
+
+#rollP:hover{
+    scale: 1.05;
+}
+
+#playA{
+    color: white;
+    padding: 1%;
+    position: absolute;
+    top: 70%;
+    left: 41%;
+    background-color: rgba(0, 128, 0, 0.475);
+    border-radius: 20px;
+}
+
+#starts{
+    border-radius: 20px;
+    margin-left: 81%;
+    margin-top: 2%;
+    margin-right: 2%;
+    text-align: right;
+    text-decoration: none;
+    color: white;
+    padding: 1%;
+    background-image: linear-gradient(to right, lightblue, lightgreen);
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    transition-property: all;
+}
+
+#starts:hover{
+    scale: 1.1;
+}
+
+#nahhh{
+    position: absolute;
+    rotate: -45deg;
+    top: 29%;
+    left: 32%;
+    width: 20%;
+}
+
+
+
+#Creeper img{
+    width: 20%;
+   margin-top: 10%;
+    
+}
+
+#Skeleton img{
+    width: 20%;
+    margin-top: 10%;
+}
+
+#Zombie img{
+    width: 20%; 
+    margin-top: 10%;
+}
+
+
+#Creeper2 img{
+    margin-top: 10%;
+    width: 20%;
+}
+
+#Skeleton2 img{
+    margin-top: 10%;
+    width: 20%;
+}
+
+#Zombie2 img{
+    margin-top: 10%;
+    width: 20%;
+}
+
+.Charakter{
+    margin-top: 10%;
+    width: 90vw;
+}
+
+.charA img{
+    margin-top: 1vw;
+    margin-left: 34%;
+    padding-right: 2%;
+    
+}
+
+#KDA{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
